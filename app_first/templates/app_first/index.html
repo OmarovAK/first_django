@@ -1,0 +1,16 @@
+{% extends 'app_first/base.html '%}
+
+{% block content %}
+<h1>Список доступных страниц</h1>
+
+<ul class="list-group list-group-horizontal">
+    <li class="list-group-item bg-success"><a class="btn btn-success" href="{% url 'first_pages:current_time' %}">Страница со временем</a></li>
+     <li class="list-group-item bg-success"><a class="btn btn-success" href="{% url 'first_pages:list_pages' %}">Список страниц</a></li>
+</ul>
+
+
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,8 @@
+{% extends 'app_first/base.html '%}
+
+{% block content %}
+<h1>Текущее время:</h1>
+{{time}}
+
+<p><a class="btn btn-info" href="{% url 'first_pages:home' %}">Главная страница</a></p>
+{% endblock content %}

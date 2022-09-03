@@ -1,0 +1,22 @@
+{% extends 'app_first/base.html '%}
+
+{% block content %}
+<h1>Список документов</h1>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th class="col-1">№ п/п</th>
+            <th class="col">Наименование</th>
+        </tr>
+    </thead>
+    {% for items in list_dir%}
+    <tr>
+        <td class="col-1">{{forloop.counter}}.</td>
+        <td class="col">{{items}}</td>
+    </tr>
+
+    {% endfor%}
+</table>
+
+<a class="btn btn-info" href="{% url 'first_pages:home' %}">Главная страница</a>
+{% endblock content %}
